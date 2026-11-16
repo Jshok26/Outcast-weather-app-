@@ -1,0 +1,32 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, sans-serif; color: #20314a; background: #eef4fa; line-height: 1.5; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.container { max-width: 960px; margin: auto; padding: 28px 18px 50px; }
+.hero { padding: 44px 10px 30px; text-align: center; }
+.hero h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin: 0; letter-spacing: -.04em; }
+.hero h1 span { color: #4485c5; }
+.hero p { color: #52677e; }
+.eyebrow { text-transform: uppercase; font-size: .78rem; letter-spacing: .14em; font-weight: 750; color: #4474a6; }
+.panel { background: white; border: 1px solid #dce6f0; border-radius: 18px; padding: 25px; margin-bottom: 18px; box-shadow: 0 8px 28px #1d46630b; }
+h2 { margin-top: 0; }
+label { display: block; font-weight: 650; margin-bottom: 8px; }
+.search-row { display: flex; gap: 10px; }
+input { flex: 1; min-width: 0; padding: 13px 14px; border: 1px solid #9eb4cb; border-radius: 9px; font: inherit; }
+button { background: #245b91; color: white; border: 0; border-radius: 9px; padding: 13px 20px; font: inherit; font-weight: 700; cursor: pointer; }
+button:hover { background: #17446d; }
+button:disabled { opacity: .65; cursor: wait; }
+.status { color: #52677e; margin-bottom: 0; }
+.status.error { color: #a62d37; }
+.current { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 10px; }
+.current h2 { margin-bottom: 4px; }
+.current p { margin: 5px 0; }
+.temperature { font-size: clamp(2.5rem, 7vw, 4.2rem); font-weight: 800; }
+.details { grid-column: 1 / -1; color: #52677e; }
+.forecast { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+.day { background: #f1f6fb; border-radius: 12px; padding: 14px 9px; text-align: center; }
+.day strong, .day span { display: block; }
+.day .symbol { font-size: 1.8rem; margin: 9px 0; }
+.day small { color: #52677e; }
+footer { text-align: center; color: #607287; font-size: .85rem; padding-top: 18px; }
+a { color: #245b91; }
+@media (max-width: 620px) { .search-row { flex-direction: column; } .forecast { grid-template-columns: repeat(2, 1fr); } .current { grid-template-columns: 1fr; } .temperature { font-size: 3rem; } }
