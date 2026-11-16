@@ -1,4 +1,3 @@
-OutcastShell | Weather Planning Application
 Project Overview
 OutcastShell is a weather planning application developed as part of coursework at the University of Maryland, College Park. The project explores how HTML, CSS, JavaScript, and the Open-Meteo Weather Forecast API can be used together to retrieve and present weather information that supports everyday planning.
 Project status: in progress.
